@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function verify()
+        {
+            var x = document.getElementById("demo").value;
+            if (x == "" || isNaN(x))
+                alert("it's not a number");
+            else
+                alert("it's a number");
+        }
+    </script>
+</head>
+<body>
+    <input id="demo" type="text">
+    <button type="button" onclick="verify()">verification</button>
+</body>
+</html>
