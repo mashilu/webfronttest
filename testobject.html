@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function changeText() {
+            var person = {
+                firstname: "ma",
+                lastname: "shilu",
+                age: 30,
+                fullName: function() {
+                    return this.firstname + " " + this.lastname;
+                }
+            };
+            x = document.getElementById("demo");
+            x.innerHTML = person.fullName() + "(" +
+                    person.firstname + person.lastname + ")" + " is " + person["age"] + " years old.";
+        }
+    </script>
+</head>
+<body>
+    <p id="demo">GOOD</p>
+    <button onclick="changeText()">click me</button>
+</body>
+</html>
