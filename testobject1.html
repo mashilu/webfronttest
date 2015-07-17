@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var person = {
+            firstname: "ma",
+            lastname: "shilu",
+            fullName: function() {
+                return this.firstname + this.lastname;
+            }
+        };
+
+        function myClick() {
+            var ele = document.getElementById("demo");
+            ele.innerHTML = person.fullName();
+        }
+    </script>
+</head>
+<body>
+    <p id="demo">test object function</p>
+    <button id = 'testBtn' onclick="myClick()">test</button>
+</body>
+</html>
